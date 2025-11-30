@@ -1,0 +1,115 @@
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Page basics */
+  body {
+    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f7fafc;
+    color: #111827;
+    margin: 0;
+  }
+  
+  /* Navbar styling */
+  .site-header {
+    background: #5c7294;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.08);
+  }
+  
+  /* Brand */
+  .navbar-brand {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-brand:hover {
+    color: #fff;
+  }
+  
+  /* Nav links */
+  .nav-links .nav-link {
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: none;
+    margin-left: 0.8rem;
+    margin-right: 0.2rem;
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background 150ms, transform 80ms;
+  }
+  
+  /* Hover/focus */
+  .nav-links .nav-link:hover,
+  .nav-links .nav-link:focus {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+    color: #fff;
+  }
+  
+  /* Section card look */
+  .section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(2, 6, 23, 0.04);
+    scroll-margin-top: var(--header-height);
+  }
+  
+  /* Header height for scroll offset */
+  :root {
+    --header-height: 76px;
+  }
+  
+  /* Hobbies / profile images */
+  .image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* optional fixed height:
+    height: 250px;
+    object-fit: cover;
+    */
+  }
+  
+  /* Cards */
+  .card {
+    border-radius: 12px;
+    border: none;
+  }
+  
+  /* Typo tweaks */
+  h3 {
+    font-weight: 600;
+  }
+  
+  /* Buttons */
+  .btn {
+    border-radius: 8px;
+    font-size: 18px;
+  }
+  
+  /* Responsive navbar behavior */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.35rem;
+    }
+  
+    .nav-links .nav-link {
+      margin: 0.15rem;
+    }
+  }
+  
